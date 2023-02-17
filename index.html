@@ -19,8 +19,8 @@
         <h1 >{{ message }}</h1>
       </div>
       <div :class="bootstrapSize6">
-        <img :scr="imgScr">
-
+        <img :scr="immagine" style="width: 100%;" alt=>
+        <!-- <img src="./img/bateman1.jpg" alt=""> -->
       </div>
   </div>
 </div>
@@ -35,7 +35,9 @@
     data() {
       return {
         message: 'Yeah Buddy!',
-        imgScr: './img/bateman1.jpg',
+        immagine: './img/bateman1.jpg',
+
+        
         bootstrapSize6: 'col-6',
         bootstrapCenter: 'justify-content-center'
       }
